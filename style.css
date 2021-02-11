@@ -1,0 +1,130 @@
+/**/
+:root {
+    --skyblue: #418DFF;
+    --turquesa: #35CDA7;
+    --purple: #8D68FA;
+    --white: #f1f1f1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+/**/
+.container{
+    display: block;
+    padding: 30px;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.4rem;
+}
+
+/*------------GRID TEMPLATE-------------*/
+body{
+    display: grid;
+    grid-template: 80px calc(100vh - 80px) 40px / 300px calc(100vw - 300px);
+    grid-template-areas: "header main-content" "header main-content";
+    background-color:#1F1F1F;
+    
+}
+.header{
+    grid-area: header;
+}
+.main-content{
+    grid-area: main-content;
+}
+
+/*-----------------HEADER----------------*/
+.header{
+    border-right: 1px solid #272727;
+}
+.header__logo-container{
+    margin-bottom: 50px;
+    padding: 0px 15px;
+}
+.header__menu{
+    margin-bottom: 50px;
+}
+.menu-content ul p{
+    padding: 15px;
+    font-size: 12px;
+    color: grey
+}
+li .icon{
+        margin-right: 10px;
+}
+.menu-content ul li{
+    list-style: none;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+} 
+
+.menu-content ul li:hover{
+    background-color: var(--turquesa);
+    box-shadow: inset 0px 0px 2px 0px black;
+    transition:0.3s;
+}
+.header__profile{
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__profile div{
+    display: flex;
+}
+.profile__photo{
+    width: 50px;
+    margin: 0 auto 10px;
+}
+.profile__photo img{
+    width: 100%;
+    border-radius: 50%;
+}
+.profile__name{
+    padding-left: 10px;
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+}
+.profile__name h4{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.profile__name h5{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: grey
+}
+.profile__description{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+/*--------------MAIN CONTENT-------------*/
+.main-content{
+    padding: 0px 30px;
+}
+
+
